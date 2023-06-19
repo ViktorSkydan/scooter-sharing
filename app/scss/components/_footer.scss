@@ -1,0 +1,105 @@
+.footer {
+	position: relative;
+	max-width: 1440px;
+
+
+	&::before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 300px;
+		background-color: #495567;
+		background-image: url('../../images/footer-decor.svg');
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: bottom right;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 96px;
+		bottom: 0;
+		background-color: #333A44;
+		z-index: -3;
+	}
+
+	.app {
+		height: 300px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+
+		&__title {
+			@extend %space-48;
+			color: #ffffff;
+			max-width: 415px;
+			z-index: 3;
+			max-height: 201px;
+			overflow: hidden;
+			padding-bottom: 5px;
+		}
+
+		&__list {
+			display: flex;
+			gap: 18px;
+			z-index: 3;
+
+			li {
+				display: flex;
+				transition: box-shadow 0.3s;
+
+				&:hover {
+					box-shadow: 0 0 6px #000;
+				}
+			}
+		}
+
+		.appstore,
+		.googleplay {
+			background-size: cover;
+			background-repeat: no-repeat;
+			border-radius: 4px;
+		}
+	}
+
+	.social {
+		display: flex;
+		gap: 24px;
+		justify-content: flex-end;
+		align-items: center;
+
+		&__item {
+			display: flex;
+			width: 24px;
+			height: 24px;
+			align-items: center;
+		}
+
+
+		&__link {
+			-webkit-mask-size: cover;
+			mask-size: cover;
+			-webkit-mask-position: center;
+			mask-position: center;
+			-webkit-mask-repeat: no-repeat;
+			mask-repeat: no-repeat;
+			background-color: $yellow;
+			transition: all 0.3s;
+		}
+
+		&__link:hover {
+			background-color: $lightGrey;
+		}
+	}
+
+}

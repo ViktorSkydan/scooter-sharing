@@ -1,0 +1,51 @@
+.menu {
+	display: grid;
+	grid-template-columns: auto 1fr 1fr;
+	align-items: center;
+	height: 96px;
+
+	&__list {
+		display: flex;
+		gap: 32px;
+		font-size: 15px;
+		line-height: 25px;
+		color: $dimGrey;
+	}
+
+	&__link {
+		display: flex;
+		overflow: hidden;
+		max-width: 180px;
+		padding: 0 4px 0 0;
+		transition: color 0.3s, text-shadow 0.1s;
+
+		&:hover {
+			color: $yellow;
+		}
+
+		&:active {
+			text-shadow: 2px 0px 2px #000000;
+		}
+	}
+
+	&__button {
+		justify-self: end;
+	}
+}
+
+.logo {
+	margin-right: 58px;
+	transition: opacity 0.3s;
+
+	&__img {
+		object-fit: contain;
+	}
+
+	&:hover {
+		opacity: 0.5;
+	}
+
+	&:active {
+		opacity: 1;
+	}
+}

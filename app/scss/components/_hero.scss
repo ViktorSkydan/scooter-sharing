@@ -1,11 +1,10 @@
 .hero {
-	background-image: url('../images/hero-bg.avif');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
-	height: 650px;
+	background-position: center bottom;
+	height: 100%;
 	position: relative;
-	margin-bottom: 160px;
+	margin-bottom: 227px;
 	overflow: hidden;
 
 	&::after {
@@ -16,9 +15,8 @@
 		background-position: center;
 		height: 100%;
 		left: 0;
-		right: -36px;
-		bottom: -97px;
-
+		right: -47px;
+		bottom: -131px;
 	}
 
 	&__inner {
@@ -32,7 +30,8 @@
 	&__title {
 		@extend %space-56;
 		color: #ffffff;
-		margin-bottom: 40px;
+		margin-bottom: 35px;
+		padding-bottom: 6px;
 		z-index: 2;
 		display: -webkit-box;
 		-webkit-line-clamp: 2;
@@ -49,11 +48,11 @@
 		margin-bottom: 40px;
 		z-index: 2;
 		max-height: 230px;
-    overflow: hidden;
+		overflow: hidden;
 	}
 
 	&__button {
-		margin-left: 93px;
+		margin-left: 95px;
 		z-index: 2;
 	}
 }

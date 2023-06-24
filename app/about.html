@@ -5,7 +5,14 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Document</title>
+		<title>Scooter sharing - Pick your scooter easy</title>
+	
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+		<link rel="manifest" href="/images/favicon/site.webmanifest">
+		<meta name="msapplication-TileColor" content="#2d89ef">
+		<meta name="theme-color" content="#ffffff">
 		<link rel="stylesheet" href="css/style.min.css">
 	</head>
 	
@@ -14,7 +21,9 @@
 			<header class="header">
 				<div class="container">
 					<nav class="menu">
-						<a class="logo" href="#" aria-label="logotype" style="background-image: url('../images/src/logo.svg');"></a>
+						<a class="logo" href="#">
+							<img class="logo__img" src="images/src/logo.svg" alt="logo" width="112" height="28">
+						</a>
 						<ul class="menu__list">
 							<li>
 								<a class="menu__link" href="#">About</a>
@@ -26,7 +35,7 @@
 								<a class="menu__link" href="#">Careers</a>
 							</li>
 						</ul>
-						<button class="menu__button button">
+						<button class="menu__button button" type="button">
 							<span>Get Scootin</span>
 						</button>
 					</nav>
@@ -46,21 +55,24 @@
 			<h2 class="sr-only">Navigation panel</h2>
 	
 			<div class="app">
-				<h3 class="app__title">Sign up and Scoot off today</h3>
+				<h3 class="title">Sign up and Scoot off today</h3>
 				<ul class="app__list">
-					<li>
-						<a class="appstore" href="#" style="background-image: url('../../images/icon-appstore.avif'); width: 159px; height: 56px;"></a>
+					<li class="app__item">
+						<a class="app__link" href="#" style="background-image: url('../../images/icon-appstore.avif'); width: 159px;">
+							<span class="sr-only">Our app in the App Store</span>
+						</a>
 					</li>
-					<li>
-						<a class="googleplay" href="#" style="background-image: url('../../images/icon-googleplay.avif'); width: 182px;
-						height: 56px;"></a>
+					<li class="app__item">
+						<a class="app__link" href="#" style="background-image: url('../../images/icon-googleplay.avif'); width: 182px;">
+							<span class="sr-only">Our app in the Google Play</span>
+						</a>
 					</li>
 				</ul>
 			</div>
 	
 			<nav class="menu">
 				<a class="logo" href="#">
-					<img class="logo__img" src="images/src/logo.svg" alt="logo">
+					<img class="logo__img" src="images/src/logo.svg" alt="logo" width="112" height="28">
 				</a>
 				<ul class="menu__list">
 					<li>
@@ -76,15 +88,21 @@
 	
 				<ul class="social">
 					<li class="social__item">
-						<a class="social__link" href="#" style="-webkit-mask-image: url('../images/sprite.svg#icon-facebook'); width: 24px; height: 24px;">
+						<a class="social__link" href="#" aria-label="Go to our Facebook">
+							<div class="social__icon"
+								style="-webkit-mask-image: url('../images/sprite.svg#icon-facebook'); width: 24px; height: 24px;"></div>
 						</a>
 					</li>
 					<li class="social__item">
-						<a class="social__link" href="#" style="-webkit-mask-image: url('../images/sprite.svg#icon-twitter'); width: 24px; height: 20px;">
+						<a class="social__link" href="#" aria-label="Go to our Twitter">
+							<div class="social__icon"
+								style="-webkit-mask-image: url('../images/sprite.svg#icon-twitter'); width: 24px; height: 20px;"></div>
 						</a>
 					</li>
 					<li class="social__item">
-						<a class="social__link" href="#" style="-webkit-mask-image: url('../images/sprite.svg#icon-instagram'); width: 24px; height: 24px;">
+						<a class="social__link" href="#" aria-label="Go to our Intagram">
+							<div class="social__icon"
+								style="-webkit-mask-image: url('../images/sprite.svg#icon-instagram'); width: 24px; height: 24px;"></div>
 						</a>
 					</li>
 				</ul>

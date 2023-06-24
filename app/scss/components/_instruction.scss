@@ -11,17 +11,7 @@
 		width: 100%;
 	}
 
-	&__img {
-		display: inline-block;
-		width: 96px;
-		height: 96px;
-		background-repeat: no-repeat;
-		background-size: cover;
-		margin-bottom: 40px;
-	}
-
-	.icon-app {
-		background-image: url('../../images/icon-app.svg');
+	&__item:nth-child(1)>.instruction__img {
 		position: relative;
 
 		&::before {
@@ -35,12 +25,11 @@
 		}
 	}
 
-	.icon-scooter {
-		background-image: url('../../images/icon-scooter.svg');
-	}
-
-	.icon-enjoy {
-		background-image: url('../../images/icon-enjoy.svg');
+	&__img {
+		display: inline-block;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-bottom: 35px;
 	}
 
 	&__title {
@@ -51,10 +40,7 @@
     white-space: nowrap;
 	}
 
-	&__text {
-		@extend %lexend;
-		color: $dimGrey;
+	.text {
 		max-height: 179px;
-    overflow: hidden;
 	}
 }

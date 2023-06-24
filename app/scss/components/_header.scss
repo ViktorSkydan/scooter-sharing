@@ -6,9 +6,9 @@
 
 	&__list {
 		display: flex;
-		gap: 32px;
+		gap: 28px;
 		font-size: 15px;
-		line-height: 25px;
+		line-height: 1.67;
 		color: $dimGrey;
 	}
 
@@ -17,6 +17,7 @@
 		overflow: hidden;
 		max-width: 180px;
 		padding: 0 4px 0 0;
+		letter-spacing: normal;
 		transition: color 0.3s, text-shadow 0.1s;
 
 		&:hover {
@@ -38,7 +39,9 @@
 	transition: opacity 0.3s;
 
 	&__img {
-		object-fit: contain;
+		object-fit: cover;
+		padding-left: 2px;
+    padding-top: 1px;
 	}
 
 	&:hover {

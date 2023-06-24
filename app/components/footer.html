@@ -4,21 +4,24 @@
 		<h2 class="sr-only">Navigation panel</h2>
 
 		<div class="app">
-			<h3 class="app__title">Sign up and Scoot off today</h3>
+			<h3 class="title">Sign up and Scoot off today</h3>
 			<ul class="app__list">
-				<li>
-					<a class="appstore" href="#" style="background-image: url('../../images/icon-appstore.avif'); width: 159px; height: 56px;"></a>
+				<li class="app__item">
+					<a class="app__link" href="#" style="background-image: url('../../images/icon-appstore.avif'); width: 159px;">
+						<span class="sr-only">Our app in the App Store</span>
+					</a>
 				</li>
-				<li>
-					<a class="googleplay" href="#" style="background-image: url('../../images/icon-googleplay.avif'); width: 182px;
-					height: 56px;"></a>
+				<li class="app__item">
+					<a class="app__link" href="#" style="background-image: url('../../images/icon-googleplay.avif'); width: 182px;">
+						<span class="sr-only">Our app in the Google Play</span>
+					</a>
 				</li>
 			</ul>
 		</div>
 
 		<nav class="menu">
 			<a class="logo" href="#">
-				<img class="logo__img" src="images/src/logo.svg" alt="logo">
+				<img class="logo__img" src="images/src/logo.svg" alt="logo" width="112" height="28">
 			</a>
 			<ul class="menu__list">
 				<li>
@@ -34,15 +37,21 @@
 
 			<ul class="social">
 				<li class="social__item">
-					<a class="social__link" href="#" style="-webkit-mask-image: url('../images/sprite.svg#icon-facebook'); width: 24px; height: 24px;">
+					<a class="social__link" href="#" aria-label="Go to our Facebook">
+						<div class="social__icon"
+							style="-webkit-mask-image: url('../images/sprite.svg#icon-facebook'); width: 24px; height: 24px;"></div>
 					</a>
 				</li>
 				<li class="social__item">
-					<a class="social__link" href="#" style="-webkit-mask-image: url('../images/sprite.svg#icon-twitter'); width: 24px; height: 20px;">
+					<a class="social__link" href="#" aria-label="Go to our Twitter">
+						<div class="social__icon"
+							style="-webkit-mask-image: url('../images/sprite.svg#icon-twitter'); width: 24px; height: 20px;"></div>
 					</a>
 				</li>
 				<li class="social__item">
-					<a class="social__link" href="#" style="-webkit-mask-image: url('../images/sprite.svg#icon-instagram'); width: 24px; height: 24px;">
+					<a class="social__link" href="#" aria-label="Go to our Intagram">
+						<div class="social__icon"
+							style="-webkit-mask-image: url('../images/sprite.svg#icon-instagram'); width: 24px; height: 24px;"></div>
 					</a>
 				</li>
 			</ul>

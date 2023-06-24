@@ -6,6 +6,7 @@ body {
 body {
 	@extend %space-24;
 	color: $darkNavy;
+	background-color: #fff;
 }
 
 .sr-only {
@@ -32,7 +33,7 @@ body {
 
 .container {
 	width: 1126px;
-	padding: 0 10px;
+	padding: 0 8px;
 	margin: 0 auto;
 }
 
@@ -40,9 +41,28 @@ body {
 	flex-grow: 1;
 }
 
+.title {
+	display: inline-block;
+	@extend %space-48;
+	margin-bottom: 24px;
+	max-width: 445px;
+	width: 100%;
+	height: 100px;
+	overflow: hidden;
+}
+
+.text {
+	@extend %lexend;
+	max-width: 445px;
+	width: 100%;
+	display: -webkit-box;
+	-webkit-line-clamp: 6;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
 .logo {
-	width: 107px;
-	height: 28px;
 	background-size: contain;
 	background-repeat: no-repeat;
 }
@@ -54,7 +74,7 @@ body {
 	background-color: $yellow;
 	font-family: inherit;
 	font-size: 15px;
-	line-height: 25px;
+	line-height: 1.67;
 	transition: color 0.4s, background-color 0.4s, border 0.1s, box-shadow 0.1s;
 
 	span {

@@ -39,9 +39,9 @@ function images() {
 		.pipe(newer('app/images'))
 		.pipe(avif({ quality: 50 }))
 
-		.pipe(src('app/images/src/*.*'))
-		.pipe(newer('app/images'))
-		.pipe(webp())
+		// .pipe(src('app/images/src/*.*'))
+		// .pipe(newer('app/images'))
+		// .pipe(webp())
 
 		.pipe(src('app/images/src/*.*'))
 		.pipe(newer('app/images'))

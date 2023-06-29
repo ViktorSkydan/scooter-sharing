@@ -1,0 +1,37 @@
+.features-about {
+	margin-bottom: 120px;
+
+	.title {
+		height: 100px;
+		margin-bottom: 14px;
+	}
+
+	.features__item {
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: row;
+
+		&:nth-child(1) {
+			&::after {
+				transform: scale(1, -1);
+				bottom: 31px;
+			}
+		}
+
+		&:nth-child(2) {
+			&::after {
+				transform: scaleX(-1, 1);
+			}
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 120px;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+
+}

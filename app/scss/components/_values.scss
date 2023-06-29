@@ -1,0 +1,56 @@
+.values {
+
+	.title {
+		max-width: 100%;
+		text-align: center;
+		margin-bottom: 98px;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 120px;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 350px;
+	}
+
+	&__img {
+		position: relative;
+		margin-bottom: 87px;
+	}
+
+	&__number {
+		position: absolute;
+		bottom: -55px;
+		right: 0;
+		left: 0;
+		margin: 0 auto;
+	}
+
+	&__title {
+		@extend %space-24;
+		margin-bottom: 27px;
+		text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	}
+
+	&__text {
+		@extend %lexend;
+		color: $dimGrey;
+		text-align: center;
+		display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	}
+}

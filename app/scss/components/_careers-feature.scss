@@ -1,0 +1,21 @@
+.careers-feature {
+	margin-bottom: 117px;
+
+	.features__item {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		position: relative;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.title {
+		line-height: 49px;
+		margin-bottom: 19px;
+	}
+
+	.text {
+		margin-bottom: 38px;
+	}
+}

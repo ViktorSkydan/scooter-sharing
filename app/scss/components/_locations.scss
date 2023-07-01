@@ -1,0 +1,79 @@
+.locations {
+
+	margin-bottom: 120px;
+
+	&__map {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-bottom: 120px;
+	}
+
+	&__btn {
+		display: inline-block;
+		position: relative;
+		width: 189px;
+		height: 72px;
+		background-color: $yellow;
+		color: $darkNavy;
+		letter-spacing: -1.071px;
+		text-decoration: transparent;
+		transition: text-decoration 0.5s;
+
+		&:hover {
+			text-decoration: underline;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 22px;
+			height: 22px;
+			transform: rotate(45deg);
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			bottom: -11px;
+			background-color: $yellow;
+		}
+	}
+
+	.new-york {
+		left: 146px;
+		top: 72px;
+	}
+
+	.london {
+		left: 189px;
+		top: 18px;
+	}
+
+	.yokohama {
+		left: 449px;
+		top: 78px;
+	}
+
+	.jakarta {
+		left: 169px;
+		top: 251px;
+	}
+
+	&__message {
+		display: flex;
+		align-items: center;
+	}
+
+	&__title {
+		max-width: 350px;
+		line-height: 48px;
+		margin-bottom: 0;
+		margin-right: 30px;
+	}
+
+	&__text {
+		max-width: 445px;
+		width: 100%;
+		color: $dimGrey;
+		margin-right: 105px;
+	}
+}

@@ -86,7 +86,7 @@ function watching() {
 	browserSync.init({
 		server: {
 			baseDir: "app/",
-			index: "careers.html"
+			index: "home.html"
 		}
 	});
 	watch(['app/scss/**/*.scss', 'app/scss/*.scss'], styles)

@@ -6,17 +6,18 @@
 	position: relative;
 	margin-bottom: 227px;
 	overflow: hidden;
+	height: 583px;
 
-	&::after {
+	&::before {
 		content: "";
 		position: absolute;
 		background-image: url('../images/hero-bg-items.svg');
 		background-repeat: no-repeat;
 		background-position: center;
-		height: 100%;
-		left: 0;
-		right: -47px;
-		bottom: -131px;
+    height: 152px;
+    left: 0;
+    right: -47px;
+    bottom: 85px;
 	}
 
 	&__inner {
@@ -24,7 +25,8 @@
 		flex-direction: column;
 		justify-content: center;
 		max-width: 500px;
-		height: 650px;
+		// height: 650px;
+		transform: translateY(44%);
 	}
 
 	&__title {

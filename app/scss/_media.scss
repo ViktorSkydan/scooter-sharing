@@ -1,0 +1,481 @@
+@media (max-width: 1200px) {
+
+	.container {
+		padding: 0 40px;
+	}
+
+	.hero {
+		margin-bottom: 122px;
+
+		&::before {
+			background-image: url('../images/yellow-arrow.svg');
+			right: -213px;
+			left: 0px;
+			bottom: 74px;
+			margin-left: auto;
+			width: 735px;
+		}
+	}
+
+	.instruction {
+		margin-bottom: 139px;
+
+		.instruction__item:nth-child(1)>.instruction__img::before {
+			width: 900px;
+		}
+	}
+
+	.features {
+		margin-bottom: 104px;
+	}
+
+	.features-about {
+		.features__item:nth-child(1)::after {
+			transform: scale(1, 1);
+		}
+	}
+
+	.values {
+		&__list {
+			gap: 35px;
+		}
+
+		&__text {
+			-webkit-line-clamp: 6;
+		}
+	}
+
+	.locations {
+		&__map {
+			height: 450px;
+			width: 915px;
+			margin: 0 auto 120px;
+		}
+
+		.new-york {
+			left: 98px;
+			top: 52px;
+		}
+
+		.london {
+			left: 110px;
+			top: -2px;
+		}
+
+		.yokohama {
+			left: 279px;
+			top: 53px;
+		}
+
+		.jakarta {
+			left: 20px;
+			top: 193px;
+		}
+
+		&__message {
+			flex-direction: column;
+			gap: 37px;
+		}
+
+		&__title {
+			margin-right: 0;
+			max-width: 457px;
+			text-align: center;
+		}
+
+		&__text {
+			margin-right: 0;
+			max-width: 573px;
+			text-align: center;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+
+	.header {
+		.logo__img {
+			margin-left: 0;
+		}
+	}
+
+	.hero {
+
+		background-position: 73% 100%;
+
+		height: 650px;
+
+		&__inner {
+			max-width: 570px;
+			margin: 0 auto;
+			align-items: center;
+			transform: translateY(47%);
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			background-image: url('../../images/circles.svg');
+			width: 234px;
+			height: 63px;
+			left: 0;
+			right: -31px;
+			margin-left: auto;
+			bottom: 46px;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			background-image: url('../images/yellow-arrow.svg');
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+			transform: scale(-1, 1);
+			width: 732px;
+			height: 150px;
+			left: 0px;
+			right: 444px;
+			bottom: 35px;
+		}
+
+		&__title {
+			max-width: 100%;
+			text-align: center;
+			margin-bottom: 17px;
+		}
+
+		&__text {
+			width: 100%;
+			text-align: center;
+			margin-bottom: 32px;
+		}
+
+		&__button {
+			margin-left: 0;
+		}
+	}
+
+	.instruction {
+
+		&__list {
+			flex-direction: column;
+			gap: 34px;
+		}
+
+		&__item {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			align-content: center;
+			max-height: 175px;
+			max-width: 100%;
+		}
+
+		.text {
+			width: 400px;
+		}
+
+		&__img {
+			margin-right: 79px;
+		}
+
+		.instruction__item:nth-child(1)>.instruction__img::before {
+			left: -427px;
+			width: 954px;
+			top: -77px;
+			rotate: 90deg;
+		}
+	}
+
+	.features {
+		&__item {
+			max-height: 100%;
+			align-items: center;
+			flex-wrap: nowrap;
+			text-align: center;
+		}
+
+		.features__item:nth-child(1)::before {
+			right: -390px;
+		}
+
+		.features__item:nth-child(1)::after {
+			right: -46px;
+			bottom: 354px;
+		}
+
+		.features__item:nth-child(2)::after {
+			left: -425px;
+		}
+
+		.features__item:nth-child(2)::before {
+			left: -385px;
+		}
+
+		.features__item:nth-child(3)::after {
+			right: -426px;
+			top: 73px;
+		}
+
+		.features__item:nth-child(3)::before {
+			right: -389px;
+		}
+
+		&__item:nth-child(1) img,
+		&__item:nth-child(3) img {
+			order: -1;
+		}
+
+		.title {
+			line-height: 48px;
+			padding-bottom: 5px;
+			margin-top: 56px;
+			margin-bottom: 35px;
+		}
+
+		.text {
+			max-width: 573px;
+		}
+
+		.features__item:not(:last-child) {
+			margin-bottom: 128px;
+		}
+
+		.features__item:nth-child(2) {
+			margin-bottom: 122px;
+		}
+
+		&__item:nth-child(2) img {
+			margin-bottom: 10px;
+		}
+
+		&__item:nth-child(3) img {
+			margin-bottom: 6px;
+		}
+
+
+
+	}
+
+	.features-about {
+		.features__item {
+			flex-direction: column;
+			gap: 55px;
+		}
+
+		.features__item:nth-child(1)::after {
+			transform: scale(1, -1);
+			bottom: 273px;
+			right: -45px;
+		}
+
+		.features__item:nth-child(1)::before {
+			right: -388px;
+		}
+
+		.features__item:nth-child(2)::after {
+			left: -425px;
+		}
+
+		.features__item:nth-child(2) img {
+			margin-bottom: 0;
+		}
+
+		.title {
+			margin-bottom: 31px;
+		}
+
+		.text {
+			max-width: 573px;
+		}
+	}
+
+	.about {
+		margin-bottom: 145px;
+
+		&__title {
+			margin: 0 0 0 57px;
+		}
+
+	}
+
+	.values {
+		&__list {
+			flex-direction: column;
+			align-items: center;
+			gap: 56px;
+		}
+
+		&__item {
+			max-width: 457px;
+		}
+	}
+
+	.faqs {
+		margin-bottom: 86px;
+
+		.title {
+			margin-bottom: 56px;
+		}
+
+		&__info {
+			display: flex;
+			gap: 0;
+			flex-direction: column;
+			margin-bottom: 46px;
+			align-items: center;
+		}
+
+		&__block {
+			margin-bottom: 22px;
+		}
+
+		&__headline {
+			margin: 36px 0 24px 40px;
+		}
+
+		& input:checked+.faqs__block .faqs__headline {
+			margin: 36px 0 24px 40px;
+		}
+
+		&__title {
+			text-align: center;
+			margin-bottom: 28px;
+		}
+
+		&__text {
+			margin: 0 28px 32px 40px;
+		}
+
+		.arrow {
+			right: 33px;
+			top: 38%;
+		}
+	}
+
+	.careers-top {
+		margin-bottom: 143px;
+
+		.title {
+			margin: 0 0 0 57px;
+		}
+	}
+
+	.careers-feature {
+		margin-bottom: 121px;
+
+		.features__item {
+			flex-direction: column;
+			align-items: center;
+			flex-wrap: nowrap;
+			gap: 64px;
+		}
+
+		.features__item:nth-child(1)::after {
+			right: -45px;
+			bottom: 362px;
+		}
+
+		.features__item:nth-child(1)::before {
+			right: -391px;
+		}
+
+		.title {
+			margin-bottom: 30px;
+		}
+
+		.features__link {
+			margin: 0 auto;
+		}
+
+		.text {
+			max-width: 573px;
+		}
+	}
+
+	.positions {
+		margin-bottom: 127px;
+
+		&__item {
+			height: 120px;
+			padding: 32px 49px 0 47px;
+		}
+	}
+
+	.locations {
+		&__map {
+			height: 337px;
+			width: 689px;
+			margin: 0 auto 65px;
+		}
+
+		&__btn {
+			width: 120px;
+			height: 32px;
+			font-size: 13px;
+			line-height: 28px;
+			letter-spacing: -0.58px;
+
+			&::before {
+				width: 11px;
+				height: 11px;
+				bottom: -5px;
+			}
+		}
+
+		.new-york {
+			left: 97px;
+			top: 51px;
+		}
+
+		.london {
+			left: 107px;
+			top: 23px;
+		}
+
+		.yokohama {
+			left: 261px;
+			top: 64px;
+		}
+
+		.jakarta {
+			left: 78px;
+			top: 168px;
+		}
+	}
+
+	.footer {
+
+		.logo__img {
+			margin-left: 0;
+		}
+
+		.app {
+			flex-direction: column;
+			justify-content: start;
+			text-align: center;
+
+			.title {
+				margin-top: 62px;
+				margin-bottom: 31px;
+			}
+
+			.appstore {
+				width: 114px;
+				height: 40px;
+			}
+
+			.googleplay {
+				width: 130px;
+				height: 40px;
+			}
+
+			&__list {
+				gap: 12px;
+			}
+		}
+
+	}
+
+}

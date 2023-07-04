@@ -58,10 +58,6 @@
 			&__item {
 				display: flex;
 				transition: box-shadow 0.3s;
-
-				&:hover {
-					box-shadow: 0 0 6px #000;
-				}
 			}
 
 			.appstore {
@@ -80,6 +76,11 @@
 			border-radius: 4px;
 			height: 56px;
 			margin-top: 4px;
+			transition: box-shadow 0.3s;
+
+			&:hover {
+				box-shadow: 0 0 6px #000;
+			}
 		}
 	}
 

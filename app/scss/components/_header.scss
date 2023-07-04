@@ -4,6 +4,10 @@
 	align-items: center;
 	height: 96px;
 
+	.burger-menu {
+		display: none;
+	}
+
 	&__list {
 		display: flex;
 		gap: 28px;
